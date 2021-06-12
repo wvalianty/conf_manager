@@ -1,0 +1,13 @@
+__pycache__
+.tox/*
+*.pyc
+.coverage*
+!.coveragerc
+*egg*
+venv
+backup
+.idea
+*DS_Store
+.idea
+.travis.yml
+

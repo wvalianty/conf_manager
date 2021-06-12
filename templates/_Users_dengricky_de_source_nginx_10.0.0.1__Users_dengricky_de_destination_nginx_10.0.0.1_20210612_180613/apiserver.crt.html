@@ -1,0 +1,122 @@
+
+<!DOCTYPE html>
+<html class="no-js">
+    <head>
+        <!-- 
+          html_title:    browser tab title
+          reset_css:     relative path to reset css file
+          pygments_css:  relative path to pygments css file
+          diff_css:      relative path to diff layout css file
+          page_title:    title shown at the top of the page. This should be the filename of the files being diff'd
+          original_code: full html contents of original file
+          modified_code: full html contents of modified file
+          jquery_js:     path to jquery.min.js
+          diff_js:       path to diff.js
+        -->
+        <meta charset="utf-8">
+        <title>
+            VS
+        </title>
+        <meta name="description" content="">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <meta name="mobile-web-app-capable" content="yes">
+        <link rel="stylesheet" href="/static/reset.css" type="text/css">
+        <link rel="stylesheet" href="/static/diff.css" type="text/css">
+        <link class="syntaxdef" rel="stylesheet" href="/static/codeformats/vs.css" type="text/css">
+    </head>
+    <body>
+        <div class="" id="topbar">
+          <div id="filetitle">VS</div>
+          <div class="switches">
+            <div class="switch">
+              <input id="showoriginal" class="toggle toggle-yes-no menuoption" type="checkbox" checked>
+              <label for="showoriginal" data-on="&#10004; left" data-off="/Users/dengricky/de/source/nginx/10.0.0.1/apiserver.crt"></label>
+            </div>
+            <div class="switch">
+              <input id="showmodified" class="toggle toggle-yes-no menuoption" type="checkbox" checked>
+              <label for="showmodified" data-on="&#10004; right" data-off="/Users/dengricky/de/destination/nginx/10.0.0.1/apiserver.crt"></label>
+            </div>
+            <div class="switch">
+              <input id="highlight" class="toggle toggle-yes-no menuoption" type="checkbox" checked>
+              <label for="highlight" data-on="&#10004; Highlight" data-off="Highlight"></label>
+            </div>
+            <div class="switch">
+              <input id="codeprintmargin" class="toggle toggle-yes-no menuoption" type="checkbox" checked>
+              <label for="codeprintmargin" data-on="&#10004; Margin" data-off="Margin"></label>
+            </div>
+            <div class="switch">
+              <input id="dosyntaxhighlight" class="toggle toggle-yes-no menuoption" type="checkbox" checked>
+              <label for="dosyntaxhighlight" data-on="&#10004; Syntax" data-off="Syntax"></label>
+            </div>
+          </div>
+        </div>
+        <div id="maincontainer" class="page-full-width">
+            <div id="leftcode" class="left-inner-shadow codebox divider-outside-bottom">
+                <div class="codefiletab">
+                    /Users/dengricky/de/source/nginx/10.0.0.1/apiserver.crt 
+                </div>
+                <div class="printmargin">
+                    01234567890123456789012345678901234567890123456789012345678901234567890123456789
+                </div>
+                <table class="highlighttable"><tr><td class="linenos"><div class="linenodiv"><pre><span class="lineno_q">1</span><span class="lineno_q">2</span><span class="lineno_q">3</span><span class="lineno_q">4</span><span class="lineno_q">5</span><span class="lineno_q">6</span><span class="lineno_q">7</span><span class="lineno_q">8</span><span class="lineno_q">9</span><span class="lineno_q">10</span><span class="lineno_q">11</span><span class="lineno_q">12</span><span class="lineno_q">13</span><span class="lineno_q">14</span><span class="lineno_q">15</span><span class="lineno_q">16</span><span class="lineno_q">17</span><span class="lineno_q">18</span><span class="lineno_q">19</span><span class="lineno_q">20</span><span class="lineno_q">21</span><span class="lineno_q">22</span></pre></div></td><td class="code"><pre>-----BEGIN CERTIFICATE-----
+MIIDrDCCApSgAwIBAgIIEIHpFiGxv50wDQYJKoZIhvcNAQELBQAwFTETMBEGA1UE
+AxMKa3ViZXJuZXRlczAeFw0yMDA2MzAxMzEyNTFaFw0yMTA2MzAxMzEyNTFaMBkx
+FzAVBgNVBAMTDmt1YmUtYXBpc2VydmVyMIIBIjANBgkqhkiG9w0BAQEFAAOCAQ8A
+MIIBCgKCAQEA0/+QB64FyNYhgObrW+1a914p+JFLirSNchA0/rf5yFA9maxQGnYY
+VgZLLyJwu+8knF5oyNnWg5ysHLM1XWBBxDpZMsTuxt8HhVJMTSNSKd91wbTy3MVb
+/S3iBZaAgXos8y1HmdbArYyr+CekaGsSms1s1HfMvn+tbMrP57KSYt2gg96t3NiN
+siTb5L7Z++wEK6r1LyCDULOMvIMbB088qTDf2XZCbnZFrspeZIouuCnGaVWwZier
+QXmtZ2aq91UDMhsfqRmVpAazX21SLJPMGCMM4v1zlqmnkpIeah5V7rkpVH3ifYy9
+XNwEmbjedqyXXyORJS1t8FGdyt1KCxcCsQIDAQABo4H7MIH4MA4GA1UdDwEB/wQE
+AwIFoDATBgNVHSUEDDAKBggrBgEFBQcDATCB0AYDVR0RBIHIMIHFghJkb2NrZXIt
+Zm9yLWRlc2t0b3CCCmt1YmVybmV0ZXOCEmt1YmVybmV0ZXMuZGVmYXVsdIIWa3Vi
+ZXJuZXRlcy5kZWZhdWx0LnN2Y4Ika3ViZXJuZXRlcy5kZWZhdWx0LnN2Yy5jbHVz
+dGVyLmxvY2FsghprdWJlcm5ldGVzLmRvY2tlci5pbnRlcm5hbIISdm0uZG9ja2Vy
+LmludGVybmFsgglsb2NhbGhvc3SHBApgAAGHBAAAAACHBMCoQQOHBH8AAAEwDQYJ
+KoZIhvcNAQELBQADggEBAIrDZKR6YiZEB+qjzWxrzdNKW1SzLzZoFFKcF77thiEj
+nxql/ZLuSmOgJG1CoOpodb69eU3GNiix3Q2rz50YTxqeDtUAusXFKCqsPw5/3Ol5
+qmitUB7b1mCaTDSA0/KIy4ixjcVmhh9kC4BX7rjGcvNyXfR60f8cGn5OD2FQzjPT
+sVdBl1hbkwQ7eI5TLjnoZKXRgQ9WdA3AmZm0smTgOJtdNtxyPMEO9kDw+9ve7NNu
+S8hgpYWRjL1lQbv84UdCFKT/ec0wmDFL3/rnHbf5OnAvwCxl6s8HanxJSeoOnjYf
+eZVHwy0X5nFDIbg/R0BNVEUgjDAIAvIG/321nLatoYE=
+-----END CERTIFICATE-----
+
+</pre></td></tr></table>
+            </div>
+            <div id="rightcode" class="left-inner-shadow codebox divider-outside-bottom">
+                <div class="codefiletab">
+                    /Users/dengricky/de/destination/nginx/10.0.0.1/apiserver.crt 
+                </div>
+                <div class="printmargin">
+                    01234567890123456789012345678901234567890123456789012345678901234567890123456789
+                </div>
+                <table class="highlighttable"><tr><td class="linenos"><div class="linenodiv"><pre><span class="lineno_q">1</span><span class="lineno_q">2</span><span class="lineno_q">3</span><span class="lineno_q">4</span><span class="lineno_q">5</span><span class="lineno_q">6</span><span class="lineno_q">7</span><span class="lineno_q">8</span><span class="lineno_q">9</span><span class="lineno_q">10</span><span class="lineno_q">11</span><span class="lineno_q">12</span><span class="lineno_q">13</span><span class="lineno_q">14</span><span class="lineno_q">15</span><span class="lineno_q">16</span><span class="lineno_q">17</span><span class="lineno_q">18</span><span class="lineno_q">19</span><span class="lineno_q">20</span><span class="lineno_q">21</span><span class="lineno_q">22</span></pre></div></td><td class="code"><pre>-----BEGIN CERTIFICATE-----
+MIIDrDCCApSgAwIBAgIIEIHpFiGxv50wDQYJKoZIhvcNAQELBQAwFTETMBEGA1UE
+AxMKa3ViZXJuZXRlczAeFw0yMDA2MzAxMzEyNTFaFw0yMTA2MzAxMzEyNTFaMBkx
+FzAVBgNVBAMTDmt1YmUtYXBpc2VydmVyMIIBIjANBgkqhkiG9w0BAQEFAAOCAQ8A
+MIIBCgKCAQEA0/+QB64FyNYhgObrW+1a914p+JFLirSNchA0/rf5yFA9maxQGnYY
+VgZLLyJwu+8knF5oyNnWg5ysHLM1XWBBxDpZMsTuxt8HhVJMTSNSKd91wbTy3MVb
+/S3iBZaAgXos8y1HmdbArYyr+CekaGsSms1s1HfMvn+tbMrP57KSYt2gg96t3NiN
+siTb5L7Z++wEK6r1LyCDULOMvIMbB088qTDf2XZCbnZFrspeZIouuCnGaVWwZier
+QXmtZ2aq91UDMhsfqRmVpAazX21SLJPMGCMM4v1zlqmnkpIeah5V7rkpVH3ifYy9
+XNwEmbjedqyXXyORJS1t8FGdyt1KCxcCsQIDAQABo4H7MIH4MA4GA1UdDwEB/wQE
+AwIFoDATBgNVHSUEDDAKBggrBgEFBQcDATCB0AYDVR0RBIHIMIHFghJkb2NrZXIt
+Zm9yLWRlc2t0b3CCCmt1YmVybmV0ZXOCEmt1YmVybmV0ZXMuZGVmYXVsdIIWa3Vi
+ZXJuZXRlcy5kZWZhdWx0LnN2Y4Ika3ViZXJuZXRlcy5kZWZhdWx0LnN2Yy5jbHVz
+dGVyLmxvY2FsghprdWJlcm5ldGVzLmRvY2tlci5pbnRlcm5hbIISdm0uZG9ja2Vy
+LmludGVybmFsgglsb2NhbGhvc3SHBApgAAGHBAAAAACHBMCoQQOHBH8AAAEwDQYJ
+KoZIhvcNAQELBQADggEBAIrDZKR6YiZEB+qjzWxrzdNKW1SzLzZoFFKcF77thiEj
+nxql/ZLuSmOgJG1CoOpodb69eU3GNiix3Q2rz50YTxqeDtUAusXFKCqsPw5/3Ol5
+qmitUB7b1mCaTDSA0/KIy4ixjcVmhh9kC4BX7rjGcvNyXfR60f8cGn5OD2FQzjPT
+sVdBl1hbkwQ7eI5TLjnoZKXRgQ9WdA3AmZm0smTgOJtdNtxyPMEO9kDw+9ve7NNu
+S8hgpYWRjL1lQbv84UdCFKT/ec0wmDFL3/rnHbf5OnAvwCxl6s8HanxJSeoOnjYf
+eZVHwy0X5nFDIbg/R0BNVEUgjDAIAvIG/321nLatoYE=
+-----END CERTIFICATE-----
+
+</pre></td></tr></table>
+            </div>
+        </div>
+<script src="/static/jquery.min.js" type="text/javascript"></script>
+<script src="/static/diff.js" type="text/javascript"></script>
+    </body>
+</html>

@@ -1,0 +1,130 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>table test</title>
+    <style>
+        .styled-table {
+            border-collapse: collapse;
+            margin: 25px 0;
+            font-size: 0.9em;
+            font-family: sans-serif;
+            box-shadow: 0 0 20px rgba(0, 0, 0, 0.15);
+            width: 80%;
+
+        }
+
+        .styled-table thead tr {
+            background-color: #009879;
+            color: #ffffff;
+            text-align: left;
+        }
+
+        .styled-table th,
+        .styled-table td {
+            padding: 12px 15px;
+        }
+
+        .styled-table tbody tr {
+            border-bottom: 1px solid #dddddd;
+        }
+
+        .styled-table tbody tr:nth-of-type(even) {
+            background-color: #f3f3f3;
+        }
+
+        .styled-table tbody tr:last-of-type {
+            border-bottom: 2px solid #009879;
+        }
+
+        .styled-table tbody tr.active-row {
+            font-weight: bold;
+            color: #009879;
+        }
+    </style>
+    <style>
+        h1 { color: #7c795d; font-family: 'Trocchi', serif; font-size: 45px; font-weight: normal; line-height: 48px; margin: 0; }
+    </style>
+</head>
+<body>
+<h1>文件对比详细</h1>
+<table class="styled-table">
+    <thead>
+        <tr>
+            <th>文件名称</th>
+            <th>差异行数</th>
+        </tr>
+    </thead>
+    <tbody>
+        <tr>
+            {% for i in detail %}
+                    <tr>
+                    <td><a href="{{ i.url }}">{{ i.file }}</a></td>
+                    <td>{{ i.num }}</td>
+                    </tr>
+            {% endfor %}
+        </tr>
+
+        <!--
+        <tr class="active-row">
+            <td>Melissa</td>
+            <td>5150</td>
+        </tr>
+        !-->
+    </tbody>
+</table>
+<br>
+<br>
+<hr>
+
+
+<h1>只在 git 的文件</h1>
+<table class="styled-table">
+    <thead>
+        <tr>
+            <th>文件名称</th>
+        </tr>
+    </thead>
+    <tbody>
+        {% if only_git_files | length > 0 %}
+            {% for g in only_git_files %}
+                <tr>
+                    <td><a href="{{ g.url }}">{{ g.file }}</a></td>
+                </tr>
+            {% endfor %}
+        {% else %}
+            <tr>
+                <td>-</td>
+            </tr>
+        {% endif %}
+    </tbody>
+</table>
+<br>
+<br>
+<hr>
+
+
+<h1>只在 remote 的文件</h1>
+<table class="styled-table">
+    <thead>
+        <tr>
+            <th>文件名称</th>
+        </tr>
+    </thead>
+    <tbody>
+        {% if only_remote_files | length > 0 %}
+            {% for r in only_remote_files %}
+                <tr>
+                   <td><a href="{{ r.url }}">{{ r.file }}</a></td>
+                </tr>
+            {% endfor %}
+        {% else %}
+            <tr>
+                <td>-</td>
+            </tr>
+        {% endif %}
+    </tbody>
+</table>
+
+</body>
+</html>

@@ -1,0 +1,272 @@
+
+<!DOCTYPE html>
+<html class="no-js">
+    <head>
+        <!-- 
+          html_title:    browser tab title
+          reset_css:     relative path to reset css file
+          pygments_css:  relative path to pygments css file
+          diff_css:      relative path to diff layout css file
+          page_title:    title shown at the top of the page. This should be the filename of the files being diff'd
+          original_code: full html contents of original file
+          modified_code: full html contents of modified file
+          jquery_js:     path to jquery.min.js
+          diff_js:       path to diff.js
+        -->
+        <meta charset="utf-8">
+        <title>
+            /Users/dengricky/de/source/nginx/10.0.0.1/mime.types VS /Users/dengricky/de/destination/nginx/10.0.0.1/mime.types
+        </title>
+        <meta name="description" content="">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <meta name="mobile-web-app-capable" content="yes">
+        <link rel="stylesheet" href="/static/reset.css" type="text/css">
+        <link rel="stylesheet" href="/static/diff.css" type="text/css">
+        <link class="syntaxdef" rel="stylesheet" href="/static/codeformats/vs.css" type="text/css">
+    </head>
+    <body>
+        <div class="" id="topbar">
+          <div id="filetitle"> 
+            /Users/dengricky/de/source/nginx/10.0.0.1/mime.types VS /Users/dengricky/de/destination/nginx/10.0.0.1/mime.types
+          </div>
+          <div class="switches">
+            <div class="switch">
+              <input id="showoriginal" class="toggle toggle-yes-no menuoption" type="checkbox" checked>
+              <label for="showoriginal" data-on="&#10004; left" data-off="/Users/dengricky/de/source/nginx/10.0.0.1/mime.types"></label>
+            </div>
+            <div class="switch">
+              <input id="showmodified" class="toggle toggle-yes-no menuoption" type="checkbox" checked>
+              <label for="showmodified" data-on="&#10004; right" data-off="/Users/dengricky/de/destination/nginx/10.0.0.1/mime.types"></label>
+            </div>
+            <div class="switch">
+              <input id="highlight" class="toggle toggle-yes-no menuoption" type="checkbox" checked>
+              <label for="highlight" data-on="&#10004; Highlight" data-off="Highlight"></label>
+            </div>
+            <div class="switch">
+              <input id="codeprintmargin" class="toggle toggle-yes-no menuoption" type="checkbox" checked>
+              <label for="codeprintmargin" data-on="&#10004; Margin" data-off="Margin"></label>
+            </div>
+            <div class="switch">
+              <input id="dosyntaxhighlight" class="toggle toggle-yes-no menuoption" type="checkbox" checked>
+              <label for="dosyntaxhighlight" data-on="&#10004; Syntax" data-off="Syntax"></label>
+            </div>
+          </div>
+        </div>
+        <div id="maincontainer" class="page-full-width">
+            <div id="leftcode" class="left-inner-shadow codebox divider-outside-bottom">
+                <div class="codefiletab">
+                    /Users/dengricky/de/source/nginx/10.0.0.1/mime.types 
+                </div>
+                <div class="printmargin">
+                    01234567890123456789012345678901234567890123456789012345678901234567890123456789
+                </div>
+                <table class="highlighttable"><tr><td class="linenos"><div class="linenodiv"><pre><span class="lineno_q">1</span><span class="lineno_q">2</span><span class="lineno_q">3</span><span class="lineno_q">4</span><span class="lineno_q">5</span><span class="lineno_q">6</span><span class="lineno_q">7</span><span class="lineno_q">8</span><span class="lineno_q">9</span><span class="lineno_q">10</span><span class="lineno_q">11</span><span class="lineno_q">12</span><span class="lineno_q">13</span><span class="lineno_q">14</span><span class="lineno_q">15</span><span class="lineno_q">16</span><span class="lineno_q">17</span><span class="lineno_q">18</span><span class="lineno_q">19</span><span class="lineno_q">20</span><span class="lineno_q">21</span><span class="lineno_q">22</span><span class="lineno_q">23</span><span class="lineno_q">24</span><span class="lineno_q">25</span><span class="lineno_q">26</span><span class="lineno_q">27</span><span class="lineno_q">28</span><span class="lineno_q">29</span><span class="lineno_q">30</span><span class="lineno_q">31</span><span class="lineno_q">32</span><span class="lineno_q">33</span><span class="lineno_q">34</span><span class="lineno_q">35</span><span class="lineno_q">36</span><span class="lineno_q">37</span><span class="lineno_q">38</span><span class="lineno_q">39</span><span class="lineno_q">40</span><span class="lineno_q">41</span><span class="lineno_q">42</span><span class="lineno_q">43</span><span class="lineno_q">44</span><span class="lineno_q">45</span><span class="lineno_q">46</span><span class="lineno_q">47</span><span class="lineno_q">48</span><span class="lineno_q">49</span><span class="lineno_q">50</span><span class="lineno_q">51</span><span class="lineno_q">52</span><span class="lineno_q">53</span><span class="lineno_q">54</span><span class="lineno_q">55</span><span class="lineno_q">56</span><span class="lineno_q">57</span><span class="lineno_q">58</span><span class="lineno_q">59</span><span class="lineno_q">60</span><span class="lineno_q">61</span><span class="lineno_q">62</span><span class="lineno_q">63</span><span class="lineno_q">64</span><span class="lineno_q">65</span><span class="lineno_q">66</span><span class="lineno_q">67</span><span class="lineno_q">68</span><span class="lineno_q">69</span><span class="lineno_q">70</span><span class="lineno_q">71</span><span class="lineno_q">72</span><span class="lineno_q">73</span><span class="lineno_q">74</span><span class="lineno_q">75</span><span class="lineno_q">76</span><span class="lineno_q">77</span><span class="lineno_q">78</span><span class="lineno_q">79</span><span class="lineno_q">80</span><span class="lineno_q">81</span><span class="lineno_q">82</span><span class="lineno_q">83</span><span class="lineno_q">84</span><span class="lineno_q">85</span><span class="lineno_q">86</span><span class="lineno_q">87</span><span class="lineno_q">88</span><span class="lineno_q">89</span><span class="lineno_q">90</span><span class="lineno_q">91</span><span class="lineno_q">92</span><span class="lineno_q">93</span><span class="lineno_q">94</span><span class="lineno_q">95</span><span class="lineno_q">96</span><span class="lineno_q">97</span></pre></div></td><td class="code"><pre>types {
+    text/html                                        html htm shtml;
+    text/css                                         css;
+    text/xml                                         xml;
+    image/gif                                        gif;
+    image/jpeg                                       jpeg jpg;
+    application/javascript                           js;
+    application/atom+xml                             atom;
+    application/rss+xml                              rss;
+
+    text/mathml                                      mml;
+    text/plain                                       txt;
+    text/vnd.sun.j2me.app-descriptor                 jad;
+    text/vnd.wap.wml                                 wml;
+    text/x-component                                 htc;
+
+    image/png                                        png;
+    image/svg+xml                                    svg svgz;
+    image/tiff                                       tif tiff;
+    image/vnd.wap.wbmp                               wbmp;
+    image/webp                                       webp;
+    image/x-icon                                     ico;
+    image/x-jng                                      jng;
+    image/x-ms-bmp                                   bmp;
+
+    font/woff                                        woff;
+    font/woff2                                       woff2;
+
+    application/java-archive                         jar war ear;
+    application/json                                 json;
+    application/mac-binhex40                         hqx;
+    application/msword                               doc;
+    application/pdf                                  pdf;
+    application/postscript                           ps eps ai;
+    application/rtf                                  rtf;
+    application/vnd.apple.mpegurl                    m3u8;
+    application/vnd.google-earth.kml+xml             kml;
+    application/vnd.google-earth.kmz                 kmz;
+    application/vnd.ms-excel                         xls;
+    application/vnd.ms-fontobject                    eot;
+    application/vnd.ms-powerpoint                    ppt;
+    application/vnd.oasis.opendocument.graphics      odg;
+    application/vnd.oasis.opendocument.presentation  odp;
+    application/vnd.oasis.opendocument.spreadsheet   ods;
+    application/vnd.oasis.opendocument.text          odt;
+    application/vnd.openxmlformats-officedocument.presentationml.presentation
+                                                     pptx;
+    application/vnd.openxmlformats-officedocument.spreadsheetml.sheet
+                                                     xlsx;
+    application/vnd.openxmlformats-officedocument.wordprocessingml.document
+                                                     docx;
+    application/vnd.wap.wmlc                         wmlc;
+    application/x-7z-compressed                      7z;
+    application/x-cocoa                              cco;
+    application/x-java-archive-diff                  jardiff;
+    application/x-java-jnlp-file                     jnlp;
+    application/x-makeself                           run;
+    application/x-perl                               pl pm;
+    application/x-pilot                              prc pdb;
+    application/x-rar-compressed                     rar;
+    application/x-redhat-package-manager             rpm;
+    application/x-sea                                sea;
+    application/x-shockwave-flash                    swf;
+    application/x-stuffit                            sit;
+    application/x-tcl                                tcl tk;
+    application/x-x509-ca-cert                       der pem crt;
+    application/x-xpinstall                          xpi;
+    application/xhtml+xml                            xhtml;
+    application/xspf+xml                             xspf;
+    application/zip                                  zip;
+
+    application/octet-stream                         bin exe dll;
+    application/octet-stream                         deb;
+    application/octet-stream                         dmg;
+    application/octet-stream                         iso img;
+    application/octet-stream                         msi msp msm;
+
+    audio/midi                                       mid midi kar;
+    audio/mpeg                                       mp3;
+    audio/ogg                                        ogg;
+    audio/x-m4a                                      m4a;
+    audio/x-realaudio                                ra;
+
+    video/3gpp                                       3gpp 3gp;
+    video/mp2t                                       ts;
+    video/mp4                                        mp4;
+    video/mpeg                                       mpeg mpg;
+    video/quicktime                                  mov;
+    video/webm                                       webm;
+    video/x-flv                                      flv;
+    video/x-m4v                                      m4v;
+    video/x-mng                                      mng;
+    video/x-ms-asf                                   asx asf;
+    video/x-ms-wmv                                   wmv;
+    video/x-msvideo                                  avi;
+}
+}
+</pre></td></tr></table>
+            </div>
+            <div id="rightcode" class="left-inner-shadow codebox divider-outside-bottom">
+                <div class="codefiletab">
+                    /Users/dengricky/de/destination/nginx/10.0.0.1/mime.types 
+                </div>
+                <div class="printmargin">
+                    01234567890123456789012345678901234567890123456789012345678901234567890123456789
+                </div>
+                <table class="highlighttable"><tr><td class="linenos"><div class="linenodiv"><pre><span class="lineno_q">1</span><span class="lineno_q">2</span><span class="lineno_q">3</span><span class="lineno_q">4</span><span class="lineno_q">5</span><span class="lineno_q">6</span><span class="lineno_q">7</span><span class="lineno_q">8</span><span class="lineno_q">9</span><span class="lineno_q">10</span><span class="lineno_q">11</span><span class="lineno_q">12</span><span class="lineno_q">13</span><span class="lineno_q">14</span><span class="lineno_q">15</span><span class="lineno_q">16</span><span class="lineno_q">17</span><span class="lineno_q">18</span><span class="lineno_q">19</span><span class="lineno_q">20</span><span class="lineno_q">21</span><span class="lineno_q">22</span><span class="lineno_q">23</span><span class="lineno_q">24</span><span class="lineno_q">25</span><span class="lineno_q">26</span><span class="lineno_q">27</span><span class="lineno_q">28</span><span class="lineno_q">29</span><span class="lineno_q">30</span><span class="lineno_q">31</span><span class="lineno_q">32</span><span class="lineno_q">33</span><span class="lineno_q">34</span><span class="lineno_q">35</span><span class="lineno_q">36</span><span class="lineno_q">37</span><span class="lineno_q">38</span><span class="lineno_q">39</span><span class="lineno_q">40</span><span class="lineno_q">41</span><span class="lineno_q">42</span><span class="lineno_q">43</span><span class="lineno_q">44</span><span class="lineno_q">45</span><span class="lineno_q">46</span><span class="lineno_q">47</span><span class="lineno_q">48</span><span class="lineno_q">49</span><span class="lineno_q">50</span><span class="lineno_q">51</span><span class="lineno_q">52</span><span class="lineno_q">53</span><span class="lineno_q">54</span><span class="lineno_q">55</span><span class="lineno_q">56</span><span class="lineno_q">57</span><span class="lineno_q">58</span><span class="lineno_q">59</span><span class="lineno_q">60</span><span class="lineno_q">61</span><span class="lineno_q">62</span><span class="lineno_q">63</span><span class="lineno_q">64</span><span class="lineno_q">65</span><span class="lineno_q">66</span><span class="lineno_q">67</span><span class="lineno_q">68</span><span class="lineno_q">69</span><span class="lineno_q">70</span><span class="lineno_q">71</span><span class="lineno_q">72</span><span class="lineno_q">73</span><span class="lineno_q">74</span><span class="lineno_q">75</span><span class="lineno_q">76</span><span class="lineno_q">77</span><span class="lineno_q">78</span><span class="lineno_q">79</span><span class="lineno_q">80</span><span class="lineno_q">81</span><span class="lineno_q">82</span><span class="lineno_q">83</span><span class="lineno_q">84</span><span class="lineno_q">85</span><span class="lineno_q">86</span><span class="lineno_q">87</span><span class="lineno_q">88</span><span class="lineno_q">89</span><span class="lineno_q">90</span><span class="lineno_q">91</span><span class="lineno_q">92</span><span class="lineno_q">93</span><span class="lineno_q">94</span><span class="lineno_q">95</span><span class="lineno_q">96</span><span class="lineno_q">97</span></pre></div></td><td class="code"><pre>types {
+    text/html                                        html htm shtml;
+    text/css                                         css;
+    text/xml                                         xml;
+    image/gif                                        gif;
+    image/jpeg                                       jpeg jpg;
+    application/javascript                           js;
+    application/atom+xml                             atom;
+    application/rss+xml                              rss;
+
+    text/mathml                                      mml;
+    text/plain                                       txt;
+    text/vnd.sun.j2me.app-descriptor                 jad;
+    text/vnd.wap.wml                                 wml;
+    text/x-component                                 htc;
+
+    image/png                                        png;
+    image/svg+xml                                    svg svgz;
+    image/tiff                                       tif tiff;
+    image/vnd.wap.wbmp                               wbmp;
+    image/webp                                       webp;
+    image/x-icon                                     ico;
+    image/x-jng                                      jng;
+    image/x-ms-bmp                                   bmp;
+
+    font/woff                                        woff;
+    font/woff2                                       woff2;
+
+    application/java-archive                         jar war ear;
+    application/json                                 json;
+    application/mac-binhex40                         hqx;
+    application/msword                               doc;
+    application/pdf                                  pdf;
+    application/postscript                           ps eps ai;
+    application/rtf                                  rtf;
+    application/vnd.apple.mpegurl                    m3u8;
+    application/vnd.google-earth.kml+xml             kml;
+    application/vnd.google-earth.kmz                 kmz;
+    application/vnd.ms-excel                         xls;
+    application/vnd.ms-fontobject                    eot;
+    application/vnd.ms-powerpoint                    ppt;
+    application/vnd.oasis.opendocument.graphics      odg;
+    application/vnd.oasis.opendocument.presentation  odp;
+    application/vnd.oasis.opendocument.spreadsheet   ods;
+    application/vnd.oasis.opendocument.text          odt;
+    application/vnd.openxmlformats-officedocument.presentationml.presentation
+                                                     pptx;
+    application/vnd.openxmlformats-officedocument.spreadsheetml.sheet
+                                                     xlsx;
+    application/vnd.openxmlformats-officedocument.wordprocessingml.document
+                                                     docx;
+    application/vnd.wap.wmlc                         wmlc;
+    application/x-7z-compressed                      7z;
+    application/x-cocoa                              cco;
+    application/x-java-archive-diff                  jardiff;
+    application/x-java-jnlp-file                     jnlp;
+    application/x-makeself                           run;
+    application/x-perl                               pl pm;
+    application/x-pilot                              prc pdb;
+    application/x-rar-compressed                     rar;
+    application/x-redhat-package-manager             rpm;
+    application/x-sea                                sea;
+    application/x-shockwave-flash                    swf;
+    application/x-stuffit                            sit;
+    application/x-tcl                                tcl tk;
+    application/x-x509-ca-cert                       der pem crt;
+    application/x-xpinstall                          xpi;
+    application/xhtml+xml                            xhtml;
+    application/xspf+xml                             xspf;
+    application/zip                                  zip;
+
+    application/octet-stream                         bin exe dll;
+    application/octet-stream                         deb;
+    application/octet-stream                         dmg;
+    application/octet-stream                         iso img;
+    application/octet-stream                         msi msp msm;
+
+    audio/midi                                       mid midi kar;
+    audio/mpeg                                       mp3;
+    audio/ogg                                        ogg;
+    audio/x-m4a                                      m4a;
+    audio/x-realaudio                                ra;
+
+    video/3gpp                                       3gpp 3gp;
+    video/mp2t                                       ts;
+    video/mp4                                        mp4;
+    video/mpeg                                       mpeg mpg;
+    video/quicktime                                  mov;
+    video/webm                                       webm;
+    video/x-flv                                      flv;
+    video/x-m4v                                      m4v;
+    video/x-mng                                      mng;
+    video/x-ms-asf                                   asx asf;
+    video/x-ms-wmv                                   wmv;
+    video/x-msvideo                                  avi;
+}
+}
+</pre></td></tr></table>
+            </div>
+        </div>
+<script src="/static/jquery.min.js" type="text/javascript"></script>
+<script src="/static/diff.js" type="text/javascript"></script>
+    </body>
+</html>

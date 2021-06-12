@@ -1,0 +1,126 @@
+
+<!DOCTYPE html>
+<html class="no-js">
+    <head>
+        <!-- 
+          html_title:    browser tab title
+          reset_css:     relative path to reset css file
+          pygments_css:  relative path to pygments css file
+          diff_css:      relative path to diff layout css file
+          page_title:    title shown at the top of the page. This should be the filename of the files being diff'd
+          original_code: full html contents of original file
+          modified_code: full html contents of modified file
+          jquery_js:     path to jquery.min.js
+          diff_js:       path to diff.js
+        -->
+        <meta charset="utf-8">
+        <title>
+            VS
+        </title>
+        <meta name="description" content="">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <meta name="mobile-web-app-capable" content="yes">
+        <link rel="stylesheet" href="/static/reset.css" type="text/css">
+        <link rel="stylesheet" href="/static/diff.css" type="text/css">
+        <link class="syntaxdef" rel="stylesheet" href="/static/codeformats/vs.css" type="text/css">
+    </head>
+    <body>
+        <div class="" id="topbar">
+          <div id="filetitle">VS</div>
+          <div class="switches">
+            <div class="switch">
+              <input id="showoriginal" class="toggle toggle-yes-no menuoption" type="checkbox" checked>
+              <label for="showoriginal" data-on="&#10004; left" data-off="/Users/dengricky/de/source/nginx/10.0.0.1/fastcgi_params"></label>
+            </div>
+            <div class="switch">
+              <input id="showmodified" class="toggle toggle-yes-no menuoption" type="checkbox" checked>
+              <label for="showmodified" data-on="&#10004; right" data-off="/Users/dengricky/de/destination/nginx/10.0.0.1/fastcgi_params"></label>
+            </div>
+            <div class="switch">
+              <input id="highlight" class="toggle toggle-yes-no menuoption" type="checkbox" checked>
+              <label for="highlight" data-on="&#10004; Highlight" data-off="Highlight"></label>
+            </div>
+            <div class="switch">
+              <input id="codeprintmargin" class="toggle toggle-yes-no menuoption" type="checkbox" checked>
+              <label for="codeprintmargin" data-on="&#10004; Margin" data-off="Margin"></label>
+            </div>
+            <div class="switch">
+              <input id="dosyntaxhighlight" class="toggle toggle-yes-no menuoption" type="checkbox" checked>
+              <label for="dosyntaxhighlight" data-on="&#10004; Syntax" data-off="Syntax"></label>
+            </div>
+          </div>
+        </div>
+        <div id="maincontainer" class="page-full-width">
+            <div id="leftcode" class="left-inner-shadow codebox divider-outside-bottom">
+                <div class="codefiletab">
+                    /Users/dengricky/de/source/nginx/10.0.0.1/fastcgi_params 
+                </div>
+                <div class="printmargin">
+                    01234567890123456789012345678901234567890123456789012345678901234567890123456789
+                </div>
+                <table class="highlighttable"><tr><td class="linenos"><div class="linenodiv"><pre><span class="lineno_q">1</span><span class="lineno_q">2</span><span class="lineno_q">3</span><span class="lineno_q">4</span><span class="lineno_q">5</span><span class="lineno_q">6</span><span class="lineno_q">7</span><span class="lineno_q">8</span><span class="lineno_q">9</span><span class="lineno_q">10</span><span class="lineno_q">11</span><span class="lineno_q">12</span><span class="lineno_q">13</span><span class="lineno_q">14</span><span class="lineno_q">15</span><span class="lineno_q">16</span><span class="lineno_q">17</span><span class="lineno_q">18</span><span class="lineno_q">19</span><span class="lineno_q">20</span><span class="lineno_q">21</span><span class="lineno_q">22</span><span class="lineno_q">23</span><span class="lineno_q">24</span><span class="lineno_q">25</span></pre></div></td><td class="code"><pre>fastcgi_param  QUERY_STRING       $query_string;
+fastcgi_param  REQUEST_METHOD     $request_method;
+fastcgi_param  CONTENT_TYPE       $content_type;
+fastcgi_param  CONTENT_LENGTH     $content_length;
+
+fastcgi_param  SCRIPT_NAME        $fastcgi_script_name;
+fastcgi_param  REQUEST_URI        $request_uri;
+fastcgi_param  DOCUMENT_URI       $document_uri;
+fastcgi_param  DOCUMENT_ROOT      $document_root;
+fastcgi_param  SERVER_PROTOCOL    $server_protocol;
+fastcgi_param  REQUEST_SCHEME     $scheme;
+fastcgi_param  HTTPS              $https if_not_empty;
+
+fastcgi_param  GATEWAY_INTERFACE  CGI/1.1;
+fastcgi_param  SERVER_SOFTWARE    nginx/$nginx_version;
+
+fastcgi_param  REMOTE_ADDR        $remote_addr;
+fastcgi_param  REMOTE_PORT        $remote_port;
+fastcgi_param  SERVER_ADDR        $server_addr;
+fastcgi_param  SERVER_PORT        $server_port;
+fastcgi_param  SERVER_NAME        $server_name;
+
+# PHP only, required if PHP was built with --enable-force-cgi-redirect
+fastcgi_param  REDIRECT_STATUS    200;
+fastcgi_param  REDIRECT_STATUS    200;
+</pre></td></tr></table>
+            </div>
+            <div id="rightcode" class="left-inner-shadow codebox divider-outside-bottom">
+                <div class="codefiletab">
+                    /Users/dengricky/de/destination/nginx/10.0.0.1/fastcgi_params 
+                </div>
+                <div class="printmargin">
+                    01234567890123456789012345678901234567890123456789012345678901234567890123456789
+                </div>
+                <table class="highlighttable"><tr><td class="linenos"><div class="linenodiv"><pre><span class="lineno_q">1</span><span class="lineno_q">2</span><span class="lineno_q">3</span><span class="lineno_q">4</span><span class="lineno_q">5</span><span class="lineno_q">6</span><span class="lineno_q">7</span><span class="lineno_q">8</span><span class="lineno_q">9</span><span class="lineno_q">10</span><span class="lineno_q">11</span><span class="lineno_q">12</span><span class="lineno_q">13</span><span class="lineno_q">14</span><span class="lineno_q">15</span><span class="lineno_q">16</span><span class="lineno_q">17</span><span class="lineno_q">18</span><span class="lineno_q">19</span><span class="lineno_q">20</span><span class="lineno_q">21</span><span class="lineno_q">22</span><span class="lineno_q">23</span><span class="lineno_q">24</span><span class="lineno_q">25</span></pre></div></td><td class="code"><pre>fastcgi_param  QUERY_STRING       $query_string;
+fastcgi_param  REQUEST_METHOD     $request_method;
+fastcgi_param  CONTENT_TYPE       $content_type;
+fastcgi_param  CONTENT_LENGTH     $content_length;
+
+fastcgi_param  SCRIPT_NAME        $fastcgi_script_name;
+fastcgi_param  REQUEST_URI        $request_uri;
+fastcgi_param  DOCUMENT_URI       $document_uri;
+fastcgi_param  DOCUMENT_ROOT      $document_root;
+fastcgi_param  SERVER_PROTOCOL    $server_protocol;
+fastcgi_param  REQUEST_SCHEME     $scheme;
+fastcgi_param  HTTPS              $https if_not_empty;
+
+fastcgi_param  GATEWAY_INTERFACE  CGI/1.1;
+fastcgi_param  SERVER_SOFTWARE    nginx/$nginx_version;
+
+fastcgi_param  REMOTE_ADDR        $remote_addr;
+fastcgi_param  REMOTE_PORT        $remote_port;
+fastcgi_param  SERVER_ADDR        $server_addr;
+fastcgi_param  SERVER_PORT        $server_port;
+fastcgi_param  SERVER_NAME        $server_name;
+
+# PHP only, required if PHP was built with --enable-force-cgi-redirect
+fastcgi_param  REDIRECT_STATUS    200;
+fastcgi_param  REDIRECT_STATUS    200;
+</pre></td></tr></table>
+            </div>
+        </div>
+<script src="/static/jquery.min.js" type="text/javascript"></script>
+<script src="/static/diff.js" type="text/javascript"></script>
+    </body>
+</html>
