@@ -1,27 +1,24 @@
-## 配置文件管理
-
-### 起因
->之前曾经就职一家规模比较大的公司，nginx 实例上百，为了维护和审计，公司开发了多个平台。  
-
->>nginx 配置文件检查平台，领导开会，通过这个平台查看 nginx 都有什么修改。
-
->>有 nginx 配置管理平台，可以通过表单批量修改 nginx 配置。
-
-这里我想通过 git 仓库管理配置文件，目标是管理所有服务都配置文件，可以实现通过提交修改到 git 仓库，触发自动推送到测试机器，然后合并到主干分支的时候自动同步到线上。
-
-本地会定期服务器上的配置文件到本地，在有新修改提交到 git 仓库的时候，会触发 webhook 拉取新的配置，重新生成对比结果页面。
-
-### 当前状态
-* git 仓库修改，触发 webhook 自动拉取，重新生成对比结果。
-![gitlab_index.png](https://raw.githubusercontent.com/wvalianty/conf_manager/main/screenshots/gitlab_index.png)
-
-![gitlab_webhook_config.png](https://raw.githubusercontent.com/wvalianty/conf_manager/main/screenshots/gitlab_webhook_config.png)
+# 配置文件管理
+使用 gitlab 管理配置文件，gitlab 触发拉取仓库中的配置文件，生成对比结果。
 
 ![eye_index.jpeg](https://raw.githubusercontent.com/wvalianty/conf_manager/main/screenshots/eye_index.jpeg)
-
 ![diff_example.png](https://raw.githubusercontent.com/wvalianty/conf_manager/main/screenshots/diff_example.png)
-![file_show.png](https://raw.githubusercontent.com/wvalianty/conf_manager/main/screenshots/file_show.png)
-### 存在问题
-webhook 触发处理是同步的，打算使用猴子补丁改造成异步。
-### 愿景
-可以管理所有服务的配置文件，从测试到生产。
+
+## 起因
+* 上百上千 nginx 实例怎么维护？配置文件肯定不再手动一台一台修改，怎么实现批量修改？
+- 在修改线上环境之前，是否可以自动化测试测试环境，测试好之后自动同步到线上？  
+* 公司服务很多，配置文件也很多，怎么及时发现配置文件被人修改？ 
+
+## 运行流程
+![work_process.png](https://raw.githubusercontent.com/wvalianty/conf_manager/main/screenshots/work_process.png)
+
+## gitlab 配置
+* git 仓库修改，触发 webhook 自动拉取，重新生成对比结果。  
+![gitlab_index.png](https://raw.githubusercontent.com/wvalianty/conf_manager/main/screenshots/gitlab_index.png)
+![gitlab_webhook_config.png](https://raw.githubusercontent.com/wvalianty/conf_manager/main/screenshots/gitlab_webhook_config.png)
+
+## 后续计划
+* 代码优化，python 多线程生成目标文件
+* webhook 被触发和执行 pull 进行结偶，加入一个 MQ
+* 文件对比忽略项
+* 。。。
