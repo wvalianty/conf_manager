@@ -1,5 +1,5 @@
 # 配置文件管理
-使用 gitlab 管理配置文件，gitlab 触发拉取仓库中的配置文件，生成对比结果。
+使用 gitlab 管理配置文件，gitlab 触发拉取仓库中的配置文件，再同步生产环境机器的配置文件到本地，生成对比结果。
 
 ![eye_index.jpeg](https://raw.githubusercontent.com/wvalianty/conf_manager/main/screenshots/eye_index.jpeg)
 ![diff_example.png](https://raw.githubusercontent.com/wvalianty/conf_manager/main/screenshots/diff_example.png)
